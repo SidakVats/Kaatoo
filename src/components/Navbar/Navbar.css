@@ -1,0 +1,7 @@
+.button1:active{
+    scale: 0.98;
+}
+
+.button1:hover{
+    background-color: #f94d13;
+}
