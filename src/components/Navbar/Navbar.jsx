@@ -36,7 +36,7 @@ const Navbar = () => {
         style={{ height: "100px" }}
       >
         <div className="container d-flex justify-content-between">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={image} alt="logo" className="img-fluid" />
             {/* Kaatoo.ca */}
           </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src={image} alt="logo" className="img-fluid" />
+              <a href="/"><img src={image} alt="logo" className="img-fluid" /></a>
               </h5>
               <button
                 type="button"
@@ -147,7 +147,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/contact">
                     Contact
                   </a>
                 </li>
