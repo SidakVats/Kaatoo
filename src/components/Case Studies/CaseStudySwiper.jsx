@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -6,17 +6,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+
+// Imported CSS file 
 import "../Case Studies/style.css";
 
 // import required modules
 import { Navigation } from "swiper/modules";
 
+
+// Images 
 import image from "../../images/underline2.svg";
 import image1 from "../../images/swiper.png";
 import image2 from "../../images/swiper1.png";
 import image4 from "../../images/swiper2.png";
 import image3 from "../../images/hero3.png";
 
+
+// Components 
 import Arrow from "../Arrow";
 
 const CaseStudySwiper = () => {
