@@ -1,6 +1,7 @@
 import React from "react";
 
 import image from "../images/underline3.svg";
+import ContactForm1 from "../components/Contact Form/ContactForm1";
 
 const Contact = () => {
   return (
@@ -44,6 +45,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <ContactForm1/>
     </>
   );
 };
