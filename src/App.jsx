@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 // Pages
 import Home from "./Pages/Home";
 import Contact from "../src/Pages/Contact";
-import About from "./components/About";
+import About from "./Pages/About";
 
 function App() {
   return (
