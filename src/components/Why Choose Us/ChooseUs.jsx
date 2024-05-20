@@ -7,12 +7,12 @@ const sections = [
   {
     image: image1,
     title: "Credibility",
-    description: "TYMIQ is a truly reliable partner who works inclusively and seamlessly integrates with the customers’ team."
+    description: "Kaatoo is a truly reliable partner who works inclusively and seamlessly integrates with the customers’ team."
   },
   {
     image: image2,
     title: "Proficiency",
-    description: "We provide rare, deep expertise in software reengineering and digitalization, making TYMIQ experts a valuable addition to your team."
+    description: "We provide rare, deep expertise in software reengineering and digitalization, making Kaatoo experts a valuable addition to your team."
   },
   {
     image: image3,

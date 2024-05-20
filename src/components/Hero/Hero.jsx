@@ -72,7 +72,7 @@ const Hero = () => {
               style={{ border: "2px solid #ededed" }}
             >
               <div>
-                “TYMIQ are goal- and outcome-oriented, able to see the big
+                “Kaatoo are goal- and outcome-oriented, able to see the big
                 picture, flexible where necessary, and rigid where appropriate.
                 Deliverables are with almost no exceptions on time, within
                 budget and performant (which is confirmed by extensive testing,

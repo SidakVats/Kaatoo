@@ -109,7 +109,7 @@ const Footer = () => {
       <div className="container mt-2">
         <hr />
         <div className="d-flex justify-content-between">
-          <div>© Copyright {currentYear} TYMIQ</div>
+          <div>© Copyright {currentYear} Kaatoo</div>
           <div>Privacy policy</div>
         </div>
       </div>

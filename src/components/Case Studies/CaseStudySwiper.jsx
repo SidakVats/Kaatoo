@@ -48,7 +48,7 @@ const CaseStudySwiper = () => {
                 </div>
                 <div className="col-sm-6 p-5">
                   <p>
-                    “TYMIQ are goal- and outcome-oriented, able to see the big
+                    “Kaatoo are goal- and outcome-oriented, able to see the big
                     picture, flexible where necessary, and rigid where
                     appropriate.”
                   </p>
@@ -82,7 +82,7 @@ const CaseStudySwiper = () => {
                 </div>
                 <div className="col-sm-6 p-5">
                   <p>
-                    “TYMIQ are goal- and outcome-oriented, able to see the big
+                    “Kaatoo are goal- and outcome-oriented, able to see the big
                     picture, flexible where necessary, and rigid where
                     appropriate.”
                   </p>
@@ -114,7 +114,7 @@ const CaseStudySwiper = () => {
                 </div>
                 <div className="col-sm-6 p-5">
                   <p>
-                    “TYMIQ are goal- and outcome-oriented, able to see the big
+                    “Kaatoo are goal- and outcome-oriented, able to see the big
                     picture, flexible where necessary, and rigid where
                     appropriate.”
                   </p>

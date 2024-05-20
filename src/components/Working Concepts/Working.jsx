@@ -20,7 +20,7 @@ const Working = () => {
                 e.currentTarget.style.border = "2px solid #ededed";
               }}
             >
-              TYMIQ builds transparent and trustworthy relationships with every
+              Kaatoo builds transparent and trustworthy relationships with every
               client and partner, assuming their business issues as our own and
               doing our utmost to find and implement the best solution. While
               working on a project, we dive deep into the business logic and
@@ -53,7 +53,7 @@ const Working = () => {
             >
               Most of our projects are led by fixed teams composed of the people who have been working together for several years and perfectly match together. Such teams are built to operate as a well-coordinated and self-sufficient unit, where all team members together constitute a single whole in their competencies and roles. This also simplifies the onboarding process on new projects and ensure higher results in a shorter period of time. We start working quickly, while other need additional time to establish personal relationships inside the team and correctly allocate their responsibilities
               <br /><br />
-              TYMIQ is commited to help mid-size and large companies fulfill complex technical tasks around digitalization and automation of their systems and processes. We are proud of our experience in custom software development and trustworthy relationships we build with our clients.
+              Kaatoo is commited to help mid-size and large companies fulfill complex technical tasks around digitalization and automation of their systems and processes. We are proud of our experience in custom software development and trustworthy relationships we build with our clients.
             </div>
           </div>
         </div>
