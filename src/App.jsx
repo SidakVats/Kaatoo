@@ -11,6 +11,7 @@ import CaseStudySwiper from "./components/Case Studies/CaseStudySwiper";
 import TechStack from "./components/TechStack/TechStack";
 import Working from "./components/Working Concepts/Working";
 import Contact from "./components/Contact Banner/Contact";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -29,6 +30,7 @@ function App() {
     <TechStack/>
     <Working/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

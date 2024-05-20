@@ -1,15 +1,40 @@
-import React from "react";
-import image from "../../images/logo.svg"
+import React, { useState } from "react";
+import image from "../../images/logo.png";
+import "./Navbar.css";
 
-import "./Navbar.css"
+import image11 from "../../images/navDropOne1.png";
+import image1 from "../../images/navDropOne2.png";
+import image2 from "../../images/navDropOne3.svg";
+import image3 from "../../images/navDropOne4.svg";
+import image4 from "../../images/navDropOne5.png";
+import image5 from "../../images/navDropOne6.svg";
+import image6 from "../../images/navDropOne7.svg";
+import image7 from "../../images/navDropOne8.png";
+import image8 from "../../images/navDropOne9.png";
+import image9 from "../../images/navDropOne10.png";
+import image10 from "../../images/navDropOne11.svg";
 
 const Navbar = () => {
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+
+  const handleMegaMenuToggle = () => {
+    setIsMegaMenuOpen((prevState) => !prevState);
+  };
+
+  const closeMegaMenu = () => {
+    setIsMegaMenuOpen(false);
+  };
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-white border-bottom fixed-top" style={{height:"100px"}}>
-        <div className="container d-flex justify-content-evenly">
+      <nav
+        className="navbar navbar-expand-lg bg-white border-bottom fixed-top"
+        style={{ height: "100px" }}
+      >
+        <div className="container d-flex justify-content-between">
           <a className="navbar-brand" href="#">
             <img src={image} alt="logo" className="img-fluid" />
+            {/* Kaatoo.ca */}
           </a>
           <button
             className="navbar-toggler"
@@ -23,27 +48,94 @@ const Navbar = () => {
           </button>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
+              <img src={image} alt="logo" className="img-fluid" />
               </h5>
               <button
                 type="button"
                 className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
+                onClick={closeMegaMenu}
               ></button>
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-evenly fs-4 text-uppercase flex-grow-1 pe-3">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    aria-expanded={isMegaMenuOpen ? "true" : "false"}
+                    onClick={handleMegaMenuToggle}
+                  >
                     Services
                   </a>
+                  <div
+                    className={`dropdown-menu mega-menu ${isMegaMenuOpen ? 'show' : ''}`}
+                    aria-labelledby="servicesDropdown"
+                  >
+                    <div className="mega-menu-content">
+                      <div className="column">
+                        <h6>Core software services</h6>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image11} alt="image" className="img-fluid" />
+                          Custom software development
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image1} alt="image" className="img-fluid" />
+                          Software reengineering
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image2} alt="image" className="img-fluid" />
+                          DevOps services and solutions
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image3} alt="image" className="img-fluid" />
+                          Mobile development services
+                        </a>
+                      </div>
+                      <div className="column divider">
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image4} alt="image" className="img-fluid" />
+                          IT outsourcing
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image5} alt="image" className="img-fluid" />
+                          AI development
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image6} alt="image" className="img-fluid" />
+                          Software maintenance
+                        </a>
+                      </div>
+                      <div className="column">
+                        <h6>Core areas of expertise</h6>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image7} alt="image" className="img-fluid" />
+                          Legacy system modernization
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image8} alt="image" className="img-fluid" />
+                          Cloud application development
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image9} alt="image" className="img-fluid" />
+                          Enterprise systems development
+                        </a>
+                        <a className="dropdown-item d-flex" href="#" onClick={closeMegaMenu}>
+                          <img src={image10} alt="image" className="img-fluid" />
+                          Identity and access management
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -55,40 +147,13 @@ const Navbar = () => {
                     Company
                   </a>
                 </li>
-                {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li> */}
               </ul>
-              
-              <button className="btn rounded-4 text-white fs-5 fw-semibold text-capatilized px-5 py-2 button1" style={{backgroundColor:"#f0734a"}}>Contact Us</button>
+              <button
+                className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 button1"
+                style={{ backgroundColor: "#f0734a" }}
+              >
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
