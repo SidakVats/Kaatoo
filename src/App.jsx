@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 
 // Pages
 import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
+import Contact from "../src/Pages/Contact";
 
 function App() {
   return (
