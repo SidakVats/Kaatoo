@@ -1,4 +1,6 @@
 import React from "react";
+
+// Icons from react-icons 
 import { GoArrowUpRight } from "react-icons/go";
 
 const Newsletter = () => {

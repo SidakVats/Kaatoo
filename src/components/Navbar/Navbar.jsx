@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import image from "../../images/logo.png";
+
+// CSS File 
 import "./Navbar.css";
 
+
+// Images 
+import image from "../../images/logo.png";
 import image11 from "../../images/navDropOne1.png";
 import image1 from "../../images/navDropOne2.png";
 import image2 from "../../images/navDropOne3.svg";

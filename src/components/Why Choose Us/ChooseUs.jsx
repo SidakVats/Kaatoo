@@ -1,4 +1,6 @@
 import React from "react";
+
+// Images 
 import image1 from "../../images/chooseus1.png";
 import image2 from "../../images/chooseus2.png";
 import image3 from "../../images/chooseus3.png";
