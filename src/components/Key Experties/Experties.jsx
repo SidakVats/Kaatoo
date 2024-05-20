@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+
+
+// Imported Component 
 import Arrow from "../Arrow";
 
+
+// Imported Images 
 import image from "../../images/underline1.svg";
 import image1 from "../../images/expertise1.png";
 import image2 from "../../images/expertise2.png";

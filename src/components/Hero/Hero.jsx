@@ -1,11 +1,9 @@
 import React from "react";
 
-import "./Hero.css"
-
+// Images 
 import image from "../../images/hero1.png";
 import image2 from "../../images/hero2.svg";
 import image3 from "../../images/hero3.png";
-
 import image4 from "../../images/hero-brand.svg"
 import image5 from "../../images/hero-brand2.svg"
 import image6 from "../../images/hero-brand3.svg"
