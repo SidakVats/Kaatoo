@@ -139,12 +139,12 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Case Studies
+                    About Us
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Company
+                    Contact
                   </a>
                 </li>
               </ul>

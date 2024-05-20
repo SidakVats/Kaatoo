@@ -1,4 +1,6 @@
 import React from "react";
+
+// Images 
 import image from "../../images/blog1.png";
 
 const Blog1 = () => {
