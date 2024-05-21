@@ -6,6 +6,8 @@ import image from "../../images/bring1.png";
 import image1 from "../../images/bring2.png";
 import image2 from "../../images/bring3.png";
 
+import { GoArrowUpRight } from "react-icons/go";
+
 const Brings = () => {
   return (
     <>

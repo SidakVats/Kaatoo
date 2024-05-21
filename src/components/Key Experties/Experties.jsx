@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-
 // Imported Component 
 import Arrow from "../Arrow";
-
 
 // Imported Images 
 import image from "../../images/underline1.svg";
@@ -23,7 +21,7 @@ const Experties = () => {
         "We helped 50+ companies optimize their work by migrating the systems in use to the latest technologies. While upgrading and stabilizing a software, we thoroughly analyze the key business and technical problems to add maximum value to the current solution. We pay much attention to the speed and security issues, as well as keep the system working during the whole process of migration.",
     },
     {
-      label: "100+ projects implemented",
+      label: "90+ projects implemented",
       text: "Enterprise software development",
       description:
         "We helped 100+ companies optimize their work by migrating the systems in use to the latest technologies. While upgrading and stabilizing a software, we thoroughly analyze the key business and technical problems to add maximum value to the current solution. We pay much attention to the speed and security issues, as well as keep the system working during the whole process of migration.",
@@ -92,7 +90,7 @@ const Experties = () => {
                       <div className="col-sm-1"></div>
                       <div className="col-sm-8 mt-4">
                         <mark
-                          className="ms-4 py-2 rounded-3"
+                          className="py-2 rounded-3"
                           style={{ backgroundColor: "#ececec" }}
                         >
                           {item.label}
@@ -101,7 +99,15 @@ const Experties = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-5 fs-2">{item.text}</div>
+                <div className="mt-5 fs-2">
+                  {item.text === "Solutions for startups" ? (
+                    <>
+                      Solutions for<br />startups
+                    </>
+                  ) : (
+                    item.text
+                  )}
+                </div>
                 <div className="mt-3 mb-5">{item.description}</div>
                 <Arrow />
               </div>
