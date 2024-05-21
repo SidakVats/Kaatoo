@@ -12,7 +12,7 @@ const Values = () => {
         </div>
 
         <div className="row mt-3">
-          <div className="col-sm-4">
+          <div className="col-sm-4 mt-3">
             <div
               className="rounded-4 p-3"
               style={{ backgroundColor: "#f7f2ef" }}
@@ -31,7 +31,7 @@ const Values = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 mt-3">
             <div
               className="rounded-4 p-3"
               style={{ backgroundColor: "#ff6634" }}
@@ -50,7 +50,7 @@ const Values = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 mt-3">
             <div
               className="rounded-4 p-3"
               style={{ backgroundColor: "#ccdcf6" }}
@@ -74,7 +74,7 @@ const Values = () => {
 
       <div className="container mt-3">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-6 mt-3">
             <div
               className="rounded-4 p-3"
               style={{ backgroundColor: "#7a9cd2" }}
@@ -96,7 +96,7 @@ const Values = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6 mt-3">
             <div
               className="rounded-4 p-3"
               style={{ backgroundColor: "#181818" }}
