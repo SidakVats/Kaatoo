@@ -1,10 +1,11 @@
 import React from 'react'
+import Values from '../components/Our Values/Values'
 
 const About = () => {
   return (
-    <div>
-      This is about page
-    </div>
+    <>
+      <Values/>
+    </>
   )
 }
 
