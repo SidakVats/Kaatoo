@@ -33,6 +33,7 @@ const TechStack = () => {
 
   const toggleShowAll = () => {
     setShowAll((prevState) => !prevState);
+    
   };
 
   const TechItem = ({ href, name, className }) => (
@@ -42,6 +43,7 @@ const TechStack = () => {
         {name}
       </div>
     </div>
+    
   );
 
   return (

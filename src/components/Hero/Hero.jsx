@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Images 
 import image from "../../images/hero1.png";
@@ -10,10 +10,13 @@ import image6 from "../../images/hero-brand3.svg"
 import image7 from "../../images/hero-brand4.svg"
 
 
+
+
 const Hero = () => {
   return (
     <>
       <div className="container" style={{ marginTop: "150px" }}>
+        
         <div className="row mx-auto">
           <div
             className="col-sm-6 rounded-3 px-4 py-4"

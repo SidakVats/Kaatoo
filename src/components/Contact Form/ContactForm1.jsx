@@ -7,13 +7,21 @@ import image2 from "../../images/login3.png";
 import image3 from "../../images/login4.png";
 import image4 from "../../images/login5.png";
 
-
 const ContactForm1 = () => {
   return (
     <>
       <div className="container">
         <p className="display-4 mt-5 fw-medium">We’d like to hear from you</p>
-        <div className="rounded-4 my-5" style={{ border: "2px solid #ececec" }}>
+        <div
+          className="rounded-4 my-5"
+          style={{ border: "2px solid #ececec" }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.border = "2px solid #ccdcf6";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.border = "2px solid #ededed";
+          }}
+        >
           <div className="row p-4">
             <div className="col-sm-6 mt-5">
               <p className="fs-5" style={{ color: "#7a9cd2" }}>
@@ -82,7 +90,7 @@ const ContactForm1 = () => {
                     </div>
                     <div className="mt-2">
                       <img src={image1} alt="" className="img-fluid" />
-                      +91 9888339029
+                      contact@kaatoo.com
                     </div>
                   </div>
                 </div>
@@ -93,21 +101,27 @@ const ContactForm1 = () => {
                   You will talk to our leadership
                 </p>
                 <div className="row">
-                    <div className="col-sm-4">
-                        <img src={image2} alt="" className="img-fluid"/>
-                        <div className="mt-2 fs-5" style={{color:"#7794c4"}}>Dzmitry</div>
-                        <div>Founder / CEO</div>
+                  <div className="col-sm-4">
+                    <img src={image2} alt="" className="img-fluid" />
+                    <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
+                      Dzmitry
                     </div>
-                    <div className="col-sm-4">
-                    <img src={image3} alt="" className="img-fluid"/>
-                    <div className="mt-2 fs-5" style={{color:"#7794c4"}}>Kanstantsin</div>
+                    <div>Founder / CEO</div>
+                  </div>
+                  <div className="col-sm-4">
+                    <img src={image3} alt="" className="img-fluid" />
+                    <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
+                      Kanstantsin
+                    </div>
                     <div>Co-Founder / CTO</div>
+                  </div>
+                  <div className="col-sm-4">
+                    <img src={image4} alt="" className="img-fluid" />
+                    <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
+                      Andrei
                     </div>
-                    <div className="col-sm-4">
-                    <img src={image4} alt="" className="img-fluid"/>
-                    <div className="mt-2 fs-5" style={{color:"#7794c4"}}>Andrei</div>
                     <div>Chief Strategy Officer</div>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
