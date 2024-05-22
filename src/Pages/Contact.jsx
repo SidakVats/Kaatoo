@@ -94,7 +94,7 @@ const Contact = () => {
                 </span>
               </div>
               <div className="fs-5 ps-2 mt-2 mb-2">
-              st. Szpitalna 8/6, 00-031, Warszawa
+              st. Szpitalna 8/6, Warszawa
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                 </span>
               </div>
               <div className="fs-5 ps-2 mt-2 mb-2">
-              st. Feringastraße 6, 85774, Unterföhring
+              st. Feringastraße 6, Unterföhring
               </div>
             </div>
           </div>
