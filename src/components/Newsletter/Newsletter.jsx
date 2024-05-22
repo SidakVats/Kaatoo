@@ -40,7 +40,7 @@ const Newsletter = () => {
                     }}
                   />
                   <ReCAPTCHA
-                    sitekey="6Ld4xOQpAAAAADucZozh3tZimw0ePpUSTXLXcqwR"
+                    sitekey="6LdVxuQpAAAAAFBgq3KduEvf-OW4WOTaMkuiA6fU"
                     onChange={onChange}
                   />
                   <button
