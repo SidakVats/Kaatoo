@@ -50,7 +50,7 @@ const Newsletter = () => {
                 </div>
               </form>
               <ReCAPTCHA
-                    sitekey="6LdVxuQpAAAAAFBgq3KduEvf-OW4WOTaMkuiA6fU"
+                    sitekey="6LcY1OQpAAAAAFO7R63wgVaR09kEVA3El9Ly_Z45"
                     onChange={onChange}
                     className="mt-3"
                   />

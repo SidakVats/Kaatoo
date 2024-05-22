@@ -7,7 +7,6 @@ import image2 from "../../images/login3.png";
 import image3 from "../../images/login4.png";
 import image4 from "../../images/login5.png";
 
-
 import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm1 = () => {
@@ -73,11 +72,11 @@ const ContactForm1 = () => {
                   }}
                 />
 
-<ReCAPTCHA
-                    sitekey="6LdVxuQpAAAAAFBgq3KduEvf-OW4WOTaMkuiA6fU"
-                    onChange={onChange}
-                    className="mt-3"
-                  />
+                <ReCAPTCHA
+                  sitekey="6LcY1OQpAAAAAFO7R63wgVaR09kEVA3El9Ly_Z45"
+                  onChange={onChange}
+                  className="mt-3"
+                />
 
                 <button
                   className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 mt-5"
@@ -136,7 +135,7 @@ const ContactForm1 = () => {
                     <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
                       Andrei
                     </div>
-                    <div >Chief Strategy Officer</div>
+                    <div>Chief Strategy Officer</div>
                   </div>
                 </div>
               </div>
