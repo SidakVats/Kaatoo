@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg bg-white border-bottom fixed-top"
+        className="navbar navbar-expand-lg bg-white border-bottom fixed-top shadow-sm"
         style={{ height: "100px" }}
       >
         <div className="container d-flex justify-content-between">

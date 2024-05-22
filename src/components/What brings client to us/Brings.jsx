@@ -72,7 +72,7 @@ const Brings = () => {
                             inclusively
                           </p>
                           <p className="fs-5 ">
-                            TYMIQ considers your specific needs and setup to
+                            Kaatoo considers your specific needs and setup to
                             bring the required experts or even build a dedicated
                             team with the missing technologies.
                           </p>

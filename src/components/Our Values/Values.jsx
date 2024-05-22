@@ -3,7 +3,7 @@ import React from "react";
 const Values = () => {
   return (
     <>
-      <div className="container" style={{ paddingTop: "120px" }}>
+      <div className="container mt-5 pt-5" >
         <p className="fs-1 fw-semibold">Our values</p>
         <div className="fs-5 mt-4">
           All our team members embody our five values and make them shine
@@ -111,7 +111,7 @@ const Values = () => {
                 Reliability
               </div>
               <div className="fs-5 text-white">
-                TYMIQ is a truly reliable partner who works inclusively and
+                Kaatoo is a truly reliable partner who works inclusively and
                 makes a single whole with the customer’s team, both in work and
                 business culture.
               </div>
