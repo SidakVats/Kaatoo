@@ -53,10 +53,10 @@ const Footer = () => {
               +48 8847129686
             </div>
 
-            <p className="fs-5 fw-medium pt-5">LOCATION</p>
-            <div>Head office: st. Heweliusza 18, 60-281 Poznan</div>
-            <div>st. Szpitalna 8/6, 00-031 Warszawa</div>
-            <div>st. Feringastraße 6, 85774 Unterföhring</div>
+            <p className="fs-5 fw-medium pt-5" style={{color: "#557ab6"}}>LOCATION</p>
+            <div>Head office: 3,9817 - 44 Avenue NW</div>
+            <div>EDMONTON ALBERTA T6E 5E3</div>
+            <div className="mt-3">LICENCE NUMBER : <span className="fw-semibold">498666132-001</span></div>
           </div>
           <div className="col-sm-3">
             <div className="fs-5 mt-3" style={{ color: "#557ab6" }}>

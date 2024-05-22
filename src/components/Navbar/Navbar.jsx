@@ -72,7 +72,7 @@ const Navbar = () => {
               <ul className="navbar-nav justify-content-evenly fs-4 text-uppercase flex-grow-1 pe-3">
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle fw-semibold"
                     href="#"
                     id="servicesDropdown"
                     role="button"
@@ -141,12 +141,12 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item fw-semibold">
                   <a className="nav-link" href="/about">
                     About Us
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item fw-semibold">
                   <a className="nav-link" href="/contact">
                     Contact
                   </a>

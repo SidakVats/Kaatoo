@@ -9,9 +9,9 @@ const About = () => {
   return (
     <>
       <Values/>
+      <TrustedBy/>
       <Work/>
       <Brings/>
-      <TrustedBy/>
       <Contact/>
     </>
   )
