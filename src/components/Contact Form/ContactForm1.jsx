@@ -82,6 +82,7 @@ const ContactForm1 = () => {
                 <button
                   className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 mt-5"
                   style={{ backgroundColor: "#f0734a" }}
+                  disabled={!verified}
                 >
                   Submit
                 </button>
