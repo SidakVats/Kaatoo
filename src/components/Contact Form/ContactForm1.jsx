@@ -106,21 +106,21 @@ const ContactForm1 = () => {
                     <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
                       Dzmitry
                     </div>
-                    <div>Founder / CEO</div>
+                    <div className="mb-4">Founder / CEO</div>
                   </div>
                   <div className="col-sm-4">
                     <img src={image3} alt="" className="img-fluid" />
                     <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
                       Kanstantsin
                     </div>
-                    <div>Co-Founder / CTO</div>
+                    <div className="mb-4">Co-Founder / CTO</div>
                   </div>
                   <div className="col-sm-4">
                     <img src={image4} alt="" className="img-fluid" />
                     <div className="mt-2 fs-5" style={{ color: "#7794c4" }}>
                       Andrei
                     </div>
-                    <div>Chief Strategy Officer</div>
+                    <div >Chief Strategy Officer</div>
                   </div>
                 </div>
               </div>

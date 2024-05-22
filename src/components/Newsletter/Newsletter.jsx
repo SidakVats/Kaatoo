@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-// Icons from react-icons 
+import ReCAPTCHA from "react-google-recaptcha";
+
+// Icons from react-icons
 import { GoArrowUpRight } from "react-icons/go";
 
 const Newsletter = () => {
+  const [verified, setVerified] = useState(false);
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
+
   return (
     <>
       <div className="container my-5 pt-5">
@@ -16,22 +25,33 @@ const Newsletter = () => {
               </p>
             </div>
             <div className="col-sm-6 mt-2">
-              <div className="d-flex gap-3">
-              <input
-                type="email"
-                placeholder="johndoe@gmail.com"
-                className="rounded-3 outline-black px-2 py-2"
-                style={{
-                  border: "2px solid #fbfbfb",
-                  backgroundColor: " #fbfbfb",
-                  borderRadius: "9px",
-                  width: "100%",
-                }}
-              />
-              <button type="submit" className="btn btn-outline-dark fs-3 rounded-circle pt-0">
-                <GoArrowUpRight />
-              </button>
-              </div>
+              <form action="">
+                <div className="d-flex gap-3">
+                  <input
+                    type="email"
+                    placeholder="johndoe@gmail.com"
+                    className="rounded-3 outline-black px-2 py-2"
+                    required
+                    style={{
+                      border: "2px solid #fbfbfb",
+                      backgroundColor: " #fbfbfb",
+                      borderRadius: "9px",
+                      width: "100%",
+                    }}
+                  />
+                  <ReCAPTCHA
+                    sitekey="6Ld4xOQpAAAAADucZozh3tZimw0ePpUSTXLXcqwR"
+                    onChange={onChange}
+                  />
+                  <button
+                    type="submit"
+                    className="btn btn-outline-dark fs-3 rounded-circle pt-0"
+                    disabled={!verified}
+                  >
+                    <GoArrowUpRight />
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
