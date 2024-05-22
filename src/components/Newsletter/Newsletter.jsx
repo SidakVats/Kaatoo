@@ -39,10 +39,7 @@ const Newsletter = () => {
                       width: "100%",
                     }}
                   />
-                  <ReCAPTCHA
-                    sitekey="6LdVxuQpAAAAAFBgq3KduEvf-OW4WOTaMkuiA6fU"
-                    onChange={onChange}
-                  />
+                  
                   <button
                     type="submit"
                     className="btn btn-outline-dark fs-3 rounded-circle pt-0"
@@ -52,6 +49,11 @@ const Newsletter = () => {
                   </button>
                 </div>
               </form>
+              <ReCAPTCHA
+                    sitekey="6LdVxuQpAAAAAFBgq3KduEvf-OW4WOTaMkuiA6fU"
+                    onChange={onChange}
+                    className="mt-3"
+                  />
             </div>
           </div>
         </div>
