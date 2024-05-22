@@ -1,7 +1,18 @@
-.brand{
-    color: orange;
+.brand {
+  color: orange;
 }
 
-*{
-    font-family: "Wix Madefor Display", sans-serif;
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
 }

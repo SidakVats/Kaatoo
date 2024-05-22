@@ -7,6 +7,7 @@ import image2 from "../../images/arrow2.svg";
 const TrustedBy = () => {
   return (
     <div className="container my-5">
+      <p className="fs-1 fw-medium pb-5">Trusted by industry leading companies from Insurance, Manufacturing, and IoT</p>
       <div className="row justify-content-between align-items-center">
         <div className="col-lg-3 col-md-6 text-center mb-4">
           <p className="fs-4 text-start" style={{ textDecoration: "underline" }}>Average partnership</p>

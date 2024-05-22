@@ -85,9 +85,9 @@ const Experties = () => {
                     <div className="d-flex">
                       <div className="col-sm-3">
                         {/* Use images from the images array */}
-                        <img src={images[index]} alt="" className="img-fluid" />
+                        <img src={images[index]} alt="images" className="img-fluid" />
                       </div>
-                      <div className="col-sm-1"></div>
+                      {/* <div className="col-sm-1"></div> */}
                       <div className="col-sm-8 mt-4">
                         <mark
                           className="py-2 rounded-3"
