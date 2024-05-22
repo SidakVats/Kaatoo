@@ -38,7 +38,7 @@ const About = () => {
         <div className="row">
           <div className="col-sm-6">
             <div className="fs-1 fw-bold">
-              <span style={{color: "#ff855e"}} className="">KAATOO</span>–YOUR SINGLE PARTNER in all IT matters
+              <span style={{color: "#ff855e"}} className="">KAATOO</span>–YOUR SINGLE PARTNER in all <span style={{color: "#ff855e"}}>IT</span> matters
             </div>
             <div className="fs-1"></div>
             <img src={image} alt="underline svg" className="img-fluid" />

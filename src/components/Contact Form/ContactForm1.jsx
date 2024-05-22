@@ -39,6 +39,7 @@ const ContactForm1 = () => {
                 <input
                   type="text"
                   placeholder="John Doe"
+                  required
                   className="rounded-3 outline-black px-2 py-2"
                   style={{
                     border: "2px solid #ececec",
@@ -51,6 +52,7 @@ const ContactForm1 = () => {
                   type="email"
                   placeholder="johndoe@gmail.com"
                   className="rounded-3 outline-black px-2 py-2 mt-4"
+                  required
                   style={{
                     border: "2px solid #ececec",
                     backgroundColor: " #fbfbfb",
@@ -63,6 +65,7 @@ const ContactForm1 = () => {
                   name=""
                   id=""
                   placeholder="Describe your challange"
+                  required
                   className="rounded-3 outline-black px-2 py-2 mt-4"
                   style={{
                     border: "2px solid #ececec",
