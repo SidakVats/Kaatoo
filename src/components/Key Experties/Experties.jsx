@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-// Imported Component 
+// Imported Component
 import Arrow from "../Arrow";
 
-// Imported Images 
+// Imported Images
 import image from "../../images/underline1.svg";
 import image1 from "../../images/expertise1.png";
 import image2 from "../../images/expertise2.png";
@@ -72,47 +72,67 @@ const Experties = () => {
           style={{ width: "25%" }}
         />
         <div className="row">
-          {expertiseData.slice(0, showAll ? expertiseData.length : 3).map((item, index) => (
-            <div className="col-12 col-md-6 col-lg-4 mt-5" key={index}>
-              <div
-                className="px-3 py-3 rounded-5"
-                style={{ border: "2px solid #ededed" }}
-                onMouseEnter={(e) => { e.currentTarget.style.border = "2px solid #ccdcf6"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.border = "2px solid #ededed"; }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="d-flex">
-                      <div className="col-sm-3">
-                        {/* Use images from the images array */}
-                        <img src={images[index]} alt="images" className="img-fluid" />
-                      </div>
-                      {/* <div className="col-sm-1"></div> */}
-                      <div className="col-sm-8 mt-4">
-                        <mark
-                          className="py-2 rounded-3"
-                          style={{ backgroundColor: "#ececec" }}
-                        >
-                          {item.label}
-                        </mark>
+          {expertiseData
+            .slice(0, showAll ? expertiseData.length : 3)
+            .map((item, index) => (
+              <div className="col-12 col-md-6 col-lg-4 mt-5" key={index}>
+                <div
+                  className="px-3 py-3 rounded-5"
+                  style={{ border: "2px solid #ededed" }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.border = "2px solid #ccdcf6";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.border = "2px solid #ededed";
+                  }}
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="d-flex">
+                        <div className="col-sm-3">
+                          {/* Use images from the images array */}
+                          <img
+                            src={images[index]}
+                            alt="images"
+                            className="img-fluid"
+                          />
+                        </div>
+                        {/* <div className="col-sm-1"></div> */}
+                        <div className="col-sm-8 mt-4">
+                          <mark
+                            className="py-2 rounded-3"
+                            style={{ backgroundColor: "#ececec" }}
+                          >
+                            {item.label}
+                          </mark>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div
+                    className="mt-5 fs-2"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = "#f0734a";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = "black";
+                    }}
+                  >
+                    {item.text === "Solutions for startups" ? (
+                      <>
+                        Solutions for
+                        <br />
+                        startups
+                      </>
+                    ) : (
+                      item.text
+                    )}
+                  </div>
+                  <div className="mt-3 mb-5">{item.description}</div>
+                  <Arrow />
                 </div>
-                <div className="mt-5 fs-2">
-                  {item.text === "Solutions for startups" ? (
-                    <>
-                      Solutions for<br />startups
-                    </>
-                  ) : (
-                    item.text
-                  )}
-                </div>
-                <div className="mt-3 mb-5">{item.description}</div>
-                <Arrow />
               </div>
-            </div>
-          ))}
+            ))}
         </div>
         <center>
           <button
