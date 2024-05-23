@@ -18,9 +18,14 @@ const Contact = () => {
                 <p className="fs-2 text-white fw-medium">
                   Talk to us–your engineering potential is higher than you think
                 </p>
-                <button className="btn rounded-4 px-4 mt-4" style={{color:"#84adf3", backgroundColor:"#fffdfd"}}>
-                  Get in touch
-                </button>
+                <a href="/contact">
+                  <button
+                    className="btn rounded-4 px-4 mt-4"
+                    style={{ color: "#84adf3", backgroundColor: "#fffdfd" }}
+                  >
+                    Get in touch
+                  </button>
+                </a>
               </div>
             </div>
           </div>

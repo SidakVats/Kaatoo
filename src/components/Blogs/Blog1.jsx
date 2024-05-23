@@ -8,7 +8,7 @@ const Blog1 = () => {
     <>
       <div className="container mb-5">
         <div
-          className="rounded-4 ps-1"
+          className="rounded-4 p-3"
           style={{ border: "2px solid #ededed" }}
           onMouseEnter={(e) => {
             e.currentTarget.style.border = "2px solid #ccdcf6";
@@ -19,7 +19,7 @@ const Blog1 = () => {
         >
           <div className="row">
             <div className="col-sm-6 ">
-              <img src={image} alt="image1" className="img-fluid" />
+              <img src={image} alt="image1" className="img-fluid shadow-sm rounded-5" />
             </div>
             <div className="col-sm-6">
               <div className="d-flex justify-content-between">
