@@ -64,7 +64,12 @@ const ServicesPage = () => {
                     <img src={image} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Custom software development services
                     </div>
                     <div className="fs-5">
@@ -92,7 +97,12 @@ const ServicesPage = () => {
                     <img src={image1} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Software reengineering services
                     </div>
                     <div className="fs-5">
@@ -120,7 +130,12 @@ const ServicesPage = () => {
                     <img src={image5} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Software maintenance services
                     </div>
                     <div className="fs-5">
@@ -149,7 +164,12 @@ const ServicesPage = () => {
                     <img src={image2} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       DevOps services and solutions
                     </div>
                     <div className="fs-5">
@@ -177,7 +197,12 @@ const ServicesPage = () => {
                     <img src={image3} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Mobile development services
                     </div>
                     <div className="fs-5">
@@ -205,7 +230,12 @@ const ServicesPage = () => {
                     <img src={image4} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       IT outsourcing services
                     </div>
                     <div className="fs-5">
@@ -233,7 +263,12 @@ const ServicesPage = () => {
                     <img src={image6} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2">
+                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       AI development services
                     </div>
                     <div className="fs-5">
@@ -265,7 +300,12 @@ const ServicesPage = () => {
                     <img src={image7} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fw-medium fs-4">
+                    <div className="mt-4 fw-medium fs-4" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Identity and access management (IAM) services
                     </div>
                     <div className="fs-5">
@@ -294,7 +334,12 @@ const ServicesPage = () => {
                     <img src={image8} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2">
+                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Legacy system modernization services
                     </div>
                     <div className="fs-5">
@@ -322,7 +367,12 @@ const ServicesPage = () => {
                     <img src={image10} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2">
+                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Enterprise application development
                     </div>
                     <div className="fs-5">
@@ -350,7 +400,12 @@ const ServicesPage = () => {
                     <img src={image9} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2">
+                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#ff6634";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#212529";
+                        }}>
                       Cloud application development services
                     </div>
                     <div className="fs-5">
