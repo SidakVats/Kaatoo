@@ -61,7 +61,7 @@ const Brings = () => {
                   aria-labelledby="nav-home-tab"
                 >
                   <div
-                    className="rounded-4"
+                    className="rounded-4 p-2"
                     style={{ border: "2px solid #ececec" }}
                   >
                     <div className="container">
@@ -91,7 +91,7 @@ const Brings = () => {
                   aria-labelledby="nav-profile-tab"
                 >
                   <div
-                    className="rounded-4"
+                    className="rounded-4 p-2"
                     style={{ border: "2px solid #ececec" }}
                   >
                     <div className="container">
@@ -121,7 +121,7 @@ const Brings = () => {
                   aria-labelledby="nav-contact-tab"
                 >
                   <div
-                    className="rounded-4"
+                    className="rounded-4 p-2"
                     style={{ border: "2px solid #ececec" }}
                   >
                     <div className="container">

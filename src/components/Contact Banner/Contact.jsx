@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <div className="container mt-5 pt-5 mb-5">
-        <div className="rounded-4 pe-1" style={{ backgroundColor: "#7a9cd2" }}>
+        <div className="rounded-4 p-2" style={{ backgroundColor: "#7a9cd2" }}>
           <div className="row">
             <div className="col-sm-6">
               <img

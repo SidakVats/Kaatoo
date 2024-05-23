@@ -42,7 +42,7 @@ const CaseStudySwiper = () => {
           <SwiperSlide>
             <div className="container-fluid">
               <div
-                className="row rounded-5"
+                className="row rounded-5 p-2"
                 style={{ border: "2px solid #ededed" }}
               >
                 <div className="col-sm-6">
@@ -76,7 +76,7 @@ const CaseStudySwiper = () => {
           <SwiperSlide>
             <div className="container-fluid">
               <div
-                className="row rounded-5"
+                className="row rounded-5 p-2"
                 style={{ border: "2px solid #ededed" }}
               >
                 <div className="col-sm-6">
@@ -108,7 +108,7 @@ const CaseStudySwiper = () => {
           <SwiperSlide>
             <div className="container-fluid">
               <div
-                className="row rounded-5"
+                className="row rounded-5 p-2"
                 style={{ border: "2px solid #ededed" }}
               >
                 <div className="col-sm-6">
