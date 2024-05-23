@@ -78,7 +78,7 @@ const Brings = () => {
                           </p>
                         </div>
                         <div className="col-sm-6">
-                          <img src={image} alt="" className="img-fluid" />
+                          <img src={image} alt="" className="img-fluid rounded-4 shadow-sm" />
                         </div>
                       </div>
                     </div>
@@ -108,7 +108,7 @@ const Brings = () => {
                           </p>
                         </div>
                         <div className="col-sm-6">
-                          <img src={image1} alt="" className="img-fluid" />
+                          <img src={image1} alt="" className="img-fluid rounded-4 shadow-sm" />
                         </div>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ const Brings = () => {
                           </p>
                         </div>
                         <div className="col-sm-6">
-                          <img src={image2} alt="" className="img-fluid " />
+                          <img src={image2} alt="" className="img-fluid rounded-4 shadow-sm" />
                         </div>
                       </div>
                     </div>

@@ -49,7 +49,7 @@ const CaseStudySwiper = () => {
                   <img
                     src={image1}
                     alt="image1"
-                    className="img-fluid rounded-4"
+                    className="img-fluid rounded-4 shadow-sm"
                   />
                 </div>
                 <div className="col-sm-6 p-5">
@@ -83,7 +83,7 @@ const CaseStudySwiper = () => {
                   <img
                     src={image2}
                     alt="image1"
-                    className="img-fluid rounded-4"
+                    className="img-fluid rounded-4 shadow-sm"
                   />
                 </div>
                 <div className="col-sm-6 p-5">
@@ -115,7 +115,7 @@ const CaseStudySwiper = () => {
                   <img
                     src={image4}
                     alt="image1"
-                    className="img-fluid rounded-4"
+                    className="img-fluid rounded-4 shadow-sm"
                   />
                 </div>
                 <div className="col-sm-6 p-5">
