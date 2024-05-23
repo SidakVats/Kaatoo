@@ -1,0 +1,11 @@
+
+.hover-effect:hover {
+    color: #bdbdbd;
+    transition: all;
+    animation-delay: 10ms;
+    cursor: pointer;
+  }
+
+
+
+  

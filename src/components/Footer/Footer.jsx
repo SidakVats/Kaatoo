@@ -1,7 +1,6 @@
 import React from "react";
-
-// Images 
 import image from "../../images/logo.png";
+import "./Footer.css"; // Import the CSS file
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,50 +52,50 @@ const Footer = () => {
               +48 8847129686
             </div>
 
-            <p className="fs-5 fw-medium pt-5" style={{color: "#557ab6"}}>LOCATION</p>
+            <p className="fs-5 fw-medium pt-5" style={{ color: "#557ab6" }}>LOCATION</p>
             <div>Head office: 3,9817 - 44 Avenue NW</div>
             <div>EDMONTON ALBERTA T6E 5E3</div>
             <div className="mt-3">LICENCE NUMBER : <span className="fw-semibold">498666132-001</span></div>
           </div>
           <div className="col-sm-3">
-            <div className="fs-5 mt-3" style={{ color: "#557ab6" }}>
+            <div className="fs-5 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
               SERVICES
             </div>
-            <div className="fs-5 mt-3 text-underline mb-3" style={{ textDecoration: "underline" }}>
+            <div className="fs-5 mt-3 mb-3 " style={{ textDecoration: "underline" }}>
               Core Software Services
             </div>
             {services.map((service, index) => (
-              <div key={index}>{service}</div>
+              <div key={index} className="hover-effect">{service}</div>
             ))}
-            <div className="fs-5 mt-3 mb-3" style={{ textDecoration: "underline" }}>
+            <div className="fs-5 mt-3 mb-3 " style={{ textDecoration: "underline" }}>
               Core areas of expertise
             </div>
             {expertise.map((area, index) => (
-              <div key={index}>{area}</div>
+              <div key={index} className="hover-effect">{area}</div>
             ))}
           </div>
           <div className="col-sm-2">
-            <div className="fs-5 mb-3 mt-3" style={{ color: "#557ab6" }}>
+            <div className="fs-5 mb-3 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
               CASE STUDIES
             </div>
             {caseStudies.map((caseStudy, index) => (
-              <div key={index}>{caseStudy}</div>
+              <div key={index} className="hover-effect">{caseStudy}</div>
             ))}
             <div className="mt-3">
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="#" className="hover-effect" style={{ textDecoration: "none" }}>
                 View All
               </a>
             </div>
           </div>
           <div className="col-sm-2">
-            <div className="fs-5 mb-3 mt-3" style={{ color: "#557ab6" }}>
+            <div className="fs-5 mb-3 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
               COMPANY
             </div>
-            <div>About us</div>
-            <div>Careers</div>
-            <div>Blog</div>
-            <div>News</div>
-            <div>Contact us</div>
+            <div className="hover-effect">About us</div>
+            <div className="hover-effect">Careers</div>
+            <div className="hover-effect">Blog</div>
+            <div className="hover-effect">News</div>
+            <div className="hover-effect">Contact us</div>
           </div>
           <div className="col-sm-2">
             <div className="fs-5 mb-3 mt-3" style={{ color: "#c4c4c4" }}>
