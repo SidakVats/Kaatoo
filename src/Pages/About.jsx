@@ -22,7 +22,7 @@ const About = () => {
               </li>
               <li className="breadcrumb-item fs-5 active" aria-current="page">
                 <a
-                  href="/contact"
+                  href="/about"
                   style={{ textDecoration: "none", color: "#ff6634" }}
                 >
                   About
