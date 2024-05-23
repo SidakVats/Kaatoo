@@ -51,7 +51,7 @@ const Services = () => {
               >
                 The main purpose of our IT services is to solve your business
                 problems and bring maximum value to your company. Focus on your
-                core business tasks with TYMIQ taking care of all your IT
+                core business tasks with Kaatoo taking care of all your IT
                 matters.
               </div>
             </div>

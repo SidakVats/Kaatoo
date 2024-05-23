@@ -7,30 +7,30 @@ import ContactForm1 from "../components/Contact Form/ContactForm1";
 const Contact = () => {
   return (
     <>
-      {/* Breadcrumps  */}
-      <div style={{ padding: "120px" }}>
-        <nav aria-label="breadcrumb" style={{ cursor: "pointer" }}>
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item fs-5">
-              <a href="/" style={{ textDecoration: "none", color: "black" }}>
-                Home
-              </a>
-            </li>
-            <li className="breadcrumb-item fs-5 active" aria-current="page">
-              <a
-                href="/contact"
-                style={{ textDecoration: "none", color: "#ff6634" }}
-              >
-                Contact
-              </a>
-            </li>
-          </ol>
-        </nav>
+      <div className="container">
+        <div style={{ paddingTop: "120px" }}>
+          <nav aria-label="breadcrumb" style={{ cursor: "pointer" }}>
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item fs-5">
+                <a href="/" style={{ textDecoration: "none", color: "black" }}>
+                  Home
+                </a>
+              </li>
+              <li className="breadcrumb-item fs-5 active" aria-current="page">
+                <a
+                  href="/contact"
+                  style={{ textDecoration: "none", color: "#ff6634" }}
+                >
+                  Contact
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
-
       {/* Contact Us Banner  */}
       <div
-        className="container-fluid"
+        className="container-fluid mt-5 pt-5"
         style={{ borderBottom: "2px solid #ededed" }}
       >
         <div className="container">
