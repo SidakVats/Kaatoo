@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Updated to use useNavigate
 
 // CSS File 
 import "./Navbar.css";
-
 
 // Images 
 import image from "../../images/logo.png";
@@ -20,13 +20,29 @@ import image10 from "../../images/navDropOne11.svg";
 
 const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Updated to use useNavigate
 
-  const handleMegaMenuToggle = () => {
+  const handleMegaMenuToggle = (e) => {
+    e.preventDefault(); // Prevent the default anchor click behavior
     setIsMegaMenuOpen((prevState) => !prevState);
   };
 
   const closeMegaMenu = () => {
     setIsMegaMenuOpen(false);
+  };
+
+  const handleMouseEnter = () => {
+    setIsMegaMenuOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMegaMenuOpen(false);
+  };
+
+  const handleNavLinkClick = (e, link) => {
+    if (!isMegaMenuOpen) {
+      navigate(link);
+    }
   };
 
   return (
@@ -38,7 +54,6 @@ const Navbar = () => {
         <div className="container d-flex justify-content-between">
           <a className="navbar-brand" href="/">
             <img src={image} alt="logo" className="img-fluid" />
-            {/* Kaatoo.ca */}
           </a>
           <button
             className="navbar-toggler"
@@ -58,7 +73,7 @@ const Navbar = () => {
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              <a href="/"><img src={image} alt="logo" className="img-fluid" /></a>
+                <a href="/"><img src={image} alt="logo" className="img-fluid" /></a>
               </h5>
               <button
                 type="button"
@@ -70,14 +85,16 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-evenly fs-4 text-uppercase flex-grow-1 pe-3">
-                <li className="nav-item dropdown">
+                <li 
+                  className="nav-item dropdown"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <a
-                    className="nav-link dropdown-toggle fw-semibold"
-                    href="#"
-                    id="servicesDropdown"
-                    role="button"
+                    className="nav-link hover1 fw-semibold"
+                    href="/services"
                     aria-expanded={isMegaMenuOpen ? "true" : "false"}
-                    onClick={handleMegaMenuToggle}
+                    onClick={(e) => handleNavLinkClick(e, '/services')}
                   >
                     Services
                   </a>
@@ -142,12 +159,12 @@ const Navbar = () => {
                   </div>
                 </li>
                 <li className="nav-item fw-semibold">
-                  <a className="nav-link" href="/about">
+                  <a className="nav-link hover1" href="/about">
                     About Us
                   </a>
                 </li>
                 <li className="nav-item fw-semibold">
-                  <a className="nav-link" href="/contact">
+                  <a className="nav-link hover1" href="/contact">
                     Contact
                   </a>
                 </li>

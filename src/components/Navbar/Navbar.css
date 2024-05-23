@@ -2,11 +2,16 @@
 
 .mega-menu {
   display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  /* transform: translateY(3.5%); */
   width: 900px; /* Set a fixed width */
   padding: 1rem;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .mega-menu.show {
@@ -69,9 +74,21 @@
   z-index: 1000;
 }
 
+
+
+.hover1:hover{
+  color: #f0734a !important;
+  transition: color 0.3s ease; 
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .mega-menu {
     width: 100%; /* Make mega menu full width on mobile */
+    transform: translateX(0%);
   }
 
   .navbar-nav .nav-item .dropdown-menu {
@@ -112,4 +129,3 @@
     margin: 0.5rem 0;
   }
 }
-
