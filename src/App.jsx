@@ -13,6 +13,7 @@ import Home from "./Pages/Home";
 import Contact from "../src/Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" Component={Contact } />
           <Route path="/about" Component={About} />
           <Route path="/services" Component={Services} />
+          <Route path="/privacypolicy" Component={PrivacyPolicy} />
         </Routes>
         <Footer />
       
