@@ -9,6 +9,9 @@ import image4 from "../../images/login5.png";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+
 const ContactForm1 = () => {
   const [verified, setVerified] = useState(false);
 
@@ -36,7 +39,7 @@ const ContactForm1 = () => {
                 Leave us a message
               </p>
               <form action="" className="mt-5">
-                <input
+                {/* <input
                   type="text"
                   placeholder="John Doe"
                   required
@@ -48,19 +51,6 @@ const ContactForm1 = () => {
                     width: "100%",
                   }}
                 />
-                <input
-                  type="email"
-                  placeholder="johndoe@gmail.com"
-                  className="rounded-3 outline-black px-2 py-2 mt-4"
-                  required
-                  style={{
-                    border: "2px solid #ececec",
-                    backgroundColor: " #fbfbfb",
-                    borderRadius: "9px",
-                    width: "100%",
-                  }}
-                />
-
                 <textarea
                   name=""
                   id=""
@@ -75,19 +65,75 @@ const ContactForm1 = () => {
                   }}
                 />
 
+                <input
+                  type="email"
+                  placeholder="johndoe@gmail.com"
+                  className="rounded-3 outline-black px-2 py-2 mt-4"
+                  required
+                  style={{
+                    border: "2px solid #ececec",
+                    backgroundColor: " #fbfbfb",
+                    borderRadius: "9px",
+                    width: "100%",
+                  }}
+                /> */}
+
+                <TextField
+                  type="text"
+                  id="outlined-basic"
+                  fullWidth
+                  label="Your Name"
+                  variant="outlined"
+                  color="warning"
+                  margin="normal"
+                  required
+                />
+
+                <TextField
+                  type="email"
+                  id="outlined-basic"
+                  fullWidth
+                  label="Email"
+                  variant="outlined"
+                  color="warning"
+                  margin="normal"
+                  required
+                />
+
+                <TextField
+                  id="outlined-multiline-static"
+                  label="Describe Your Challange"
+                  color="warning"
+                  margin="normal"
+                  required
+                  fullWidth
+                  multiline
+                  rows={5}               
+                />
+
                 <ReCAPTCHA
                   sitekey="6LcY1OQpAAAAAFO7R63wgVaR09kEVA3El9Ly_Z45"
                   onChange={onChange}
                   className="mt-3"
                 />
 
-                <button
+                {/* <button
                   className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 mt-5"
                   style={{ backgroundColor: "#f0734a" }}
+                  
+                >
+                  Submit
+                </button> */}
+
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="warning"
+                  size="large"
                   disabled={!verified}
                 >
                   Submit
-                </button>
+                </Button>
               </form>
             </div>
             <div className="col-sm-6 mt-5">
