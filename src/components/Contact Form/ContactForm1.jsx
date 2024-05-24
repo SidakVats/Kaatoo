@@ -125,6 +125,7 @@ const ContactForm1 = () => {
                   Submit
                 </button> */}
 
+                <div className="mt-3">
                 <Button
                   type="submit"
                   variant="contained"
@@ -134,6 +135,7 @@ const ContactForm1 = () => {
                 >
                   Submit
                 </Button>
+                </div>
               </form>
             </div>
             <div className="col-sm-6 mt-5">
