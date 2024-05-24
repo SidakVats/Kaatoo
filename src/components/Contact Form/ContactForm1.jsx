@@ -12,6 +12,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Typography from "@mui/material/Typography";
+
+
 const ContactForm1 = () => {
   const [verified, setVerified] = useState(false);
 
@@ -39,45 +44,6 @@ const ContactForm1 = () => {
                 Leave us a message
               </p>
               <form action="" className="mt-5">
-                {/* <input
-                  type="text"
-                  placeholder="John Doe"
-                  required
-                  className="rounded-3 outline-black px-2 py-2"
-                  style={{
-                    border: "2px solid #ececec",
-                    backgroundColor: " #fbfbfb",
-                    borderRadius: "9px",
-                    width: "100%",
-                  }}
-                />
-                <textarea
-                  name=""
-                  id=""
-                  placeholder="Describe your challange"
-                  required
-                  className="rounded-3 outline-black px-2 py-2 mt-4"
-                  style={{
-                    border: "2px solid #ececec",
-                    backgroundColor: " #fbfbfb",
-                    borderRadius: "9px",
-                    width: "100%",
-                  }}
-                />
-
-                <input
-                  type="email"
-                  placeholder="johndoe@gmail.com"
-                  className="rounded-3 outline-black px-2 py-2 mt-4"
-                  required
-                  style={{
-                    border: "2px solid #ececec",
-                    backgroundColor: " #fbfbfb",
-                    borderRadius: "9px",
-                    width: "100%",
-                  }}
-                /> */}
-
                 <TextField
                   type="text"
                   id="outlined-basic"
@@ -108,7 +74,27 @@ const ContactForm1 = () => {
                   required
                   fullWidth
                   multiline
-                  rows={5}               
+                  rows={5}
+                />
+
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      // defaultChecked
+                      sx={{
+                        color: "gray",
+                        "&.Mui-checked": {
+                          color: "#f0734a",
+                        },
+                      }}
+                    />
+                  }
+                  label={
+                    <Typography>
+                      I  accept the{" "}
+                      <span style={{ color: "#534fff" }}><a href="/privacypolicy" style={{textDecoration:"none"}}>Privacy Policy</a></span>
+                    </Typography>
+                  }
                 />
 
                 <ReCAPTCHA
@@ -117,24 +103,16 @@ const ContactForm1 = () => {
                   className="mt-3"
                 />
 
-                {/* <button
-                  className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 mt-5"
-                  style={{ backgroundColor: "#f0734a" }}
-                  
-                >
-                  Submit
-                </button> */}
-
                 <div className="mt-3">
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="warning"
-                  size="large"
-                  disabled={!verified}
-                >
-                  Submit
-                </Button>
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    color="warning"
+                    size="large"
+                    disabled={!verified}
+                  >
+                    Submit
+                  </Button>
                 </div>
               </form>
             </div>

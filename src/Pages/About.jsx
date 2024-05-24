@@ -7,29 +7,40 @@ import Contact from "../components/Contact Banner/Contact";
 
 import image from "../images/underline5.svg";
 
+
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Link from "@mui/material/Link";
+import HomeIcon from "@mui/icons-material/Home";
+
+import InfoIcon from '@mui/icons-material/Info';
+
 const About = () => {
   return (
     <>
       {/* Breadcrumps  */}
       <div className="container">
         <div style={{ paddingTop: "120px" }}>
-          <nav aria-label="breadcrumb" style={{ cursor: "pointer" }}>
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item fs-5">
-                <a href="/" style={{ textDecoration: "none", color: "black" }}>
-                  Home
-                </a>
-              </li>
-              <li className="breadcrumb-item fs-5 active" aria-current="page">
-                <a
-                  href="/about"
-                  style={{ textDecoration: "none", color: "#ff6634" }}
-                >
-                  About
-                </a>
-              </li>
-            </ol>
-          </nav>
+          <Breadcrumbs aria-label="breadcrumb">
+            <Link
+              underline="hover"
+              sx={{ display: "flex", alignItems: "center", fontSize:"15px" }}
+              color="inherit"
+              href="/"
+            >
+              <HomeIcon sx={{ mr: 0.5 }} fontSize="small" />
+              Home
+            </Link>
+            <Link href="/about" style={{textDecoration:"none", color:"none"}} >
+            <Typography
+              sx={{ display: "flex", alignItems: "center" }}
+              color="#f0734a"
+            >
+              <InfoIcon sx={{ mr: 0.5 }} fontSize="small" />
+              About
+            </Typography>
+              </Link>
+          </Breadcrumbs>
         </div>
       </div>
 

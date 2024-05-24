@@ -6,23 +6,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
-// Imported CSS file 
+// Imported CSS file
 import "../Case Studies/style.css";
 
 // import required modules
 import { Navigation } from "swiper/modules";
 
-
-// Images 
+// Images
 import image from "../../images/underline2.svg";
 import image1 from "../../images/swiper.png";
 import image2 from "../../images/swiper1.png";
 import image4 from "../../images/swiper2.png";
 import image3 from "../../images/hero3.png";
 
-
-// Components 
+// Components
 import Arrow from "../Arrow";
 
 const CaseStudySwiper = () => {
@@ -79,13 +76,6 @@ const CaseStudySwiper = () => {
                 className="row rounded-5 p-2"
                 style={{ border: "2px solid #ededed" }}
               >
-                <div className="col-sm-6">
-                  <img
-                    src={image2}
-                    alt="image1"
-                    className="img-fluid rounded-4 shadow-sm"
-                  />
-                </div>
                 <div className="col-sm-6 p-5">
                   <p>
                     “Kaatoo are goal- and outcome-oriented, able to see the big
@@ -100,6 +90,13 @@ const CaseStudySwiper = () => {
                     </div>
                   </div>
                   <Arrow />
+                </div>
+                <div className="col-sm-6">
+                  <img
+                    src={image2}
+                    alt="image1"
+                    className="img-fluid rounded-4 shadow-sm"
+                  />
                 </div>
               </div>
             </div>

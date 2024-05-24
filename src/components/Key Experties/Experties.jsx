@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // Imported Component
 import Arrow from "../Arrow";
 
+import "./Experties.css";
+
 // Imported Images
 import image from "../../images/underline1.svg";
 import image1 from "../../images/expertise1.png";
@@ -86,31 +88,29 @@ const Experties = () => {
                     e.currentTarget.style.border = "2px solid #ededed";
                   }}
                 >
-                  <div className="container">
+                  <div className="container container1">
                     <div className="row">
-                      <div className="d-flex">
-                        <div className="col-sm-3">
-                          {/* Use images from the images array */}
-                          <img
-                            src={images[index]}
-                            alt="images"
-                            className="img-fluid"
-                          />
-                        </div>
-                        {/* <div className="col-sm-1"></div> */}
-                        <div className="col-sm-8 mt-4">
-                          <mark
-                            className="py-2 rounded-3"
-                            style={{ backgroundColor: "#ececec" }}
-                          >
-                            {item.label}
-                          </mark>
-                        </div>
+                      <div className="col-sm-12">
+                        {/* Use images from the images array */}
+                        <img
+                          src={images[index]}
+                          alt="images"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="text-end mt-4 div1">
+                        <mark
+                          className="py-2 px-3 rounded-3"
+                          style={{ backgroundColor: "#ececec" }}
+                        >
+                          {item.label}
+                        </mark>
                       </div>
                     </div>
                   </div>
+
                   <div
-                    className="mt-5 fs-2"
+                    className="fs-2"
                     onMouseEnter={(e) => {
                       e.currentTarget.style.color = "#f0734a";
                     }}
@@ -128,6 +128,7 @@ const Experties = () => {
                       item.text
                     )}
                   </div>
+
                   <div className="mt-3 mb-5">{item.description}</div>
                   <Arrow />
                 </div>

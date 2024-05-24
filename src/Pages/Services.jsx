@@ -3,28 +3,39 @@ import React from "react";
 import image from "../images/underline6.svg";
 import ServicesPage from "../components/Services Page/ServicesPage";
 
+
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Link from "@mui/material/Link";
+import HomeIcon from "@mui/icons-material/Home";
+
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+
 const Services = () => {
   return (
     <>
       <div className="container">
         <div style={{ paddingTop: "120px" }}>
-          <nav aria-label="breadcrumb" style={{ cursor: "pointer" }}>
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item fs-5">
-                <a href="/" style={{ textDecoration: "none", color: "black" }}>
-                  Home
-                </a>
-              </li>
-              <li className="breadcrumb-item fs-5 active" aria-current="page">
-                <a
-                  href="/services"
-                  style={{ textDecoration: "none", color: "#ff6634" }}
-                >
-                  Services
-                </a>
-              </li>
-            </ol>
-          </nav>
+          <Breadcrumbs aria-label="breadcrumb">
+            <Link
+              underline="hover"
+              sx={{ display: "flex", alignItems: "center", fontSize:"15px" }}
+              color="inherit"
+              href="/"
+            >
+              <HomeIcon sx={{ mr: 0.5 }} fontSize="small" />
+              Home
+            </Link>
+            <Link href="/services" style={{textDecoration:"none", color:"none"}} >
+            <Typography
+              sx={{ display: "flex", alignItems: "center" }}
+              color="#f0734a"
+            >
+              <DesignServicesIcon sx={{ mr: 0.5 }} fontSize="small" />
+              Services
+            </Typography>
+              </Link>
+          </Breadcrumbs>
         </div>
       </div>
 
