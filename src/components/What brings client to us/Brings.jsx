@@ -78,7 +78,11 @@ const Brings = () => {
                           </p>
                         </div>
                         <div className="col-sm-6">
-                          <img src={image} alt="" className="img-fluid rounded-4 shadow-sm" />
+                          <img
+                            src={image}
+                            alt="image1"
+                            className="img-fluid rounded-4 shadow-sm"
+                          />
                         </div>
                       </div>
                     </div>
@@ -96,6 +100,13 @@ const Brings = () => {
                   >
                     <div className="container">
                       <div className="row">
+                        <div className="col-sm-6">
+                          <img
+                            src={image1}
+                            alt="image2"
+                            className="img-fluid rounded-4 shadow-sm"
+                          />
+                        </div>
                         <div className="col-sm-6 py-4 ps-4">
                           <p className="fs-3 fw-medium">
                             Need for fairly rare expertise in software
@@ -106,9 +117,6 @@ const Brings = () => {
                             systems and applications back on track and bring
                             additional value to your business.
                           </p>
-                        </div>
-                        <div className="col-sm-6">
-                          <img src={image1} alt="" className="img-fluid rounded-4 shadow-sm" />
                         </div>
                       </div>
                     </div>
@@ -138,7 +146,11 @@ const Brings = () => {
                           </p>
                         </div>
                         <div className="col-sm-6">
-                          <img src={image2} alt="" className="img-fluid rounded-4 shadow-sm" />
+                          <img
+                            src={image2}
+                            alt="image3"
+                            className="img-fluid rounded-4 shadow-sm"
+                          />
                         </div>
                       </div>
                     </div>
