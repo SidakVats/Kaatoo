@@ -3,12 +3,17 @@ import React from "react";
 
 // Imported Components 
 import Arrow from "../Arrow";
+// import image from "../../images/underline7.svg";
+
 
 const Services = () => {
   return (
     <>
       <div className="container mb-5">
-        <p className="display-3 my-5 fw-medium">Core software services</p>
+        <p className="display-3 mt-5 fw-medium">Core software services</p>
+        {/* <div>
+          <img src={image} alt="" className="img-fluid" />
+        </div> */}
         <div className="row">
           <div class="col mt-2">
             <div className="rounded-4 px-3 py-4" style={{ border: "2px solid #ededed" }}>

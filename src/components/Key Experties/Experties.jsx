@@ -71,7 +71,7 @@ const Experties = () => {
           src={image}
           alt=""
           className="img-fluid"
-          style={{ width: "25%" }}
+          
         />
         <div className="row">
           {expertiseData

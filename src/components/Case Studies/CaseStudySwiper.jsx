@@ -28,7 +28,7 @@ const CaseStudySwiper = () => {
       <div className="container mt-5 pt-5">
         <div className="display-4 fw-medium">Case studies</div>
         <div>
-          <img src={image} alt="" className="img-fluid " />
+          <img src={image} alt="" className="img-fluid" />
         </div>
         <Swiper
           navigation={true}
