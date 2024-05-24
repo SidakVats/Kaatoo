@@ -1,4 +1,7 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import NavigationIcon from '@mui/icons-material/Navigation';
+import Fab from "@mui/material/Fab";
 
 const Contact = () => {
   return (
@@ -19,12 +22,10 @@ const Contact = () => {
                   Talk to us–your engineering potential is higher than you think
                 </p>
                 <a href="/contact">
-                  <button
-                    className="btn rounded-4 px-4 mt-4"
-                    style={{ color: "#84adf3", backgroundColor: "#fffdfd" }}
-                  >
-                    Get in touch
-                  </button>
+                <Fab variant="extended">
+                  <NavigationIcon sx={{ mr: 1, color:"#7a9cd2" }} />
+                  <span style={{color:"#7a9cd2", fontSize:"17px"}}>Contact Us</span>
+                </Fab>
                 </a>
               </div>
             </div>

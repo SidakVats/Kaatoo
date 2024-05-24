@@ -5,6 +5,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 // Icons from react-icons
 import { GoArrowUpRight } from "react-icons/go";
 
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+
 const Newsletter = () => {
   const [verified, setVerified] = useState(false);
 
@@ -27,7 +30,7 @@ const Newsletter = () => {
             <div className="col-sm-6 mt-2">
               <form action="">
                 <div className="d-flex gap-3">
-                  <input
+                  {/* <input
                     type="email"
                     placeholder="johndoe@gmail.com"
                     className="rounded-3 outline-black px-2 py-2"
@@ -38,22 +41,44 @@ const Newsletter = () => {
                       borderRadius: "9px",
                       width: "100%",
                     }}
+                  /> */}
+
+                  <TextField
+                    type="email"
+                    id="outlined-basic"
+                    fullWidth
+                    label="Email"
+                    variant="outlined"
+                    color="primary"
+                    margin="normal"
+                    required
                   />
-                  
-                  <button
+
+                  {/* <button
                     type="submit"
-                    className="btn btn-outline-dark fs-3 rounded-circle pt-0"
+                    className="btn btn-outline-dark fs-1 rounded-circle pt-0"
                     disabled={!verified}
                   >
-                    <GoArrowUpRight />
-                  </button>
+                    
+                  </button> */}
+
+                  <Button
+                  type="submit"
+                  variant="outlined"
+                  color="primary"
+                  size="large"
+                  disabled={!verified}
+                  style={{borderRadius:"50px"}}
+                >
+                  <GoArrowUpRight className="fs-1"/>
+                </Button>
                 </div>
               </form>
               <ReCAPTCHA
-                    sitekey="6LcY1OQpAAAAAFO7R63wgVaR09kEVA3El9Ly_Z45"
-                    onChange={onChange}
-                    className="mt-3"
-                  />
+                sitekey="6LcY1OQpAAAAAFO7R63wgVaR09kEVA3El9Ly_Z45"
+                onChange={onChange}
+                className="mt-3"
+              />
             </div>
           </div>
         </div>
