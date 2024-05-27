@@ -29,20 +29,25 @@ const ServicesPage = () => {
   return (
     <>
       <div className="container mt-5">
-        <div className="d-flex gap-3">
-          <div
-            onClick={() => setActiveSection("coreServices")}
-            style={getButtonStyle("coreServices")}
-            className="px-4 py-2 fs-4 rounded-4 fw-medium"
-          >
-            Core software services
+        <div className="row">
+          <div className="col-sm-6">
+            {" "}
+            <div
+              onClick={() => setActiveSection("coreServices")}
+              style={getButtonStyle("coreServices")}
+              className="px-4 py-2 fs-4 rounded-4 fw-medium text-center"
+            >
+              Core software services
+            </div>
           </div>
-          <div
-            onClick={() => setActiveSection("areasOfExpertise")}
-            style={getButtonStyle("areasOfExpertise")}
-            className="px-4 py-2 fs-4 rounded-4 fw-medium"
-          >
-            Core areas of expertise
+          <div className="col-sm-6">
+            <div
+              onClick={() => setActiveSection("areasOfExpertise")}
+              style={getButtonStyle("areasOfExpertise")}
+              className="px-4 py-2 fs-4 rounded-4 fw-medium text-center"
+            >
+              Core areas of expertise
+            </div>
           </div>
         </div>
 
@@ -64,12 +69,15 @@ const ServicesPage = () => {
                     <img src={image} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Custom software development services
                     </div>
                     <div className="fs-5">
@@ -97,12 +105,15 @@ const ServicesPage = () => {
                     <img src={image1} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Software reengineering services
                     </div>
                     <div className="fs-5">
@@ -130,17 +141,20 @@ const ServicesPage = () => {
                     <img src={image5} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Software maintenance services
                     </div>
                     <div className="fs-5">
-                      Combining unique technical expertise, agile practices, and a
-                      DevOps-driven culture, we offer software maintenance and
+                      Combining unique technical expertise, agile practices, and
+                      a DevOps-driven culture, we offer software maintenance and
                       support services for customers across industries.
                     </div>
                   </div>
@@ -164,12 +178,15 @@ const ServicesPage = () => {
                     <img src={image2} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       DevOps services and solutions
                     </div>
                     <div className="fs-5">
@@ -197,17 +214,20 @@ const ServicesPage = () => {
                     <img src={image3} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Mobile development services
                     </div>
                     <div className="fs-5">
-                      Developing native and cross-platform apps for your specific
-                      purposes.
+                      Developing native and cross-platform apps for your
+                      specific purposes.
                     </div>
                   </div>
                 </div>
@@ -230,12 +250,15 @@ const ServicesPage = () => {
                     <img src={image4} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       IT outsourcing services
                     </div>
                     <div className="fs-5">
@@ -263,12 +286,15 @@ const ServicesPage = () => {
                     <img src={image6} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-5 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-5 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       AI development services
                     </div>
                     <div className="fs-5">
@@ -300,18 +326,21 @@ const ServicesPage = () => {
                     <img src={image7} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fw-medium fs-4" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-4 fw-medium fs-4"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Identity and access management (IAM) services
                     </div>
                     <div className="fs-5">
                       Developing custom identity and access management solutions
-                      to secure all authentication and authorization processes in
-                      your application.
+                      to secure all authentication and authorization processes
+                      in your application.
                     </div>
                   </div>
                 </div>
@@ -334,12 +363,15 @@ const ServicesPage = () => {
                     <img src={image8} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-4 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Legacy system modernization services
                     </div>
                     <div className="fs-5">
@@ -367,12 +399,15 @@ const ServicesPage = () => {
                     <img src={image10} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-4 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Enterprise application development
                     </div>
                     <div className="fs-5">
@@ -400,12 +435,15 @@ const ServicesPage = () => {
                     <img src={image9} alt="image" className="img-fluid" />
                   </div>
                   <div className="col-sm-6">
-                    <div className="mt-4 fs-2" onMouseEnter={(e) => {
-                          e.currentTarget.style.color = "#ff6634";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = "#212529";
-                        }}>
+                    <div
+                      className="mt-4 fs-2"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ff6634";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#212529";
+                      }}
+                    >
                       Cloud application development services
                     </div>
                     <div className="fs-5">
