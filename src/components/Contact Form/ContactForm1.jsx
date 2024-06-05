@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import image from "../../images/login1.svg";
 import image1 from "../../images/login2.svg";
 
-import image2 from "../../images/login3.png";
+import image2 from "../../images/linkedin.svg";
 import image3 from "../../images/login4.png";
 import image4 from "../../images/login5.png";
 
@@ -15,7 +15,6 @@ import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Typography from "@mui/material/Typography";
-
 
 const ContactForm1 = () => {
   const [verified, setVerified] = useState(false);
@@ -91,8 +90,15 @@ const ContactForm1 = () => {
                   }
                   label={
                     <Typography>
-                      I  accept the{" "}
-                      <span style={{ color: "#534fff" }}><a href="/privacypolicy" style={{textDecoration:"none"}}>Privacy Policy</a></span>
+                      I accept the{" "}
+                      <span style={{ color: "#534fff" }}>
+                        <a
+                          href="/privacypolicy"
+                          style={{ textDecoration: "none" }}
+                        >
+                          Privacy Policy
+                        </a>
+                      </span>
                     </Typography>
                   }
                 />
@@ -141,6 +147,34 @@ const ContactForm1 = () => {
               </div>
 
               <div className="container mt-5">
+                <div className="row">
+                  <div className="col-sm-6 ">
+                    <div className="ms-1" style={{ color: "#cdcdcd" }}>
+                      Phone
+                    </div>
+                    <div className="mt-2 flex">
+                      <img
+                        src={image2}
+                        alt="image"
+                        className="img-fluid"
+                        width={25}
+                      />
+                      <span className="ms-2">@Kaatoo.ca</span>
+                    </div>
+                  </div>
+                  <div className="col-sm-6 ">
+                    <div className="ms-1" style={{ color: "#cdcdcd" }}>
+                      Email
+                    </div>
+                    <div className="mt-2">
+                      <img src={image1} alt="" className="img-fluid" />
+                      contact@kaatoo.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className="container mt-5">
                 <p style={{ color: "#7a9cd2" }}>
                   You will talk to our leadership
                 </p>
@@ -167,7 +201,7 @@ const ContactForm1 = () => {
                     <div>Chief Strategy Officer</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

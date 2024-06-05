@@ -22,3 +22,24 @@
 }
 
 
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 40.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.map-responsive:hover{
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: all;
+}
+
+
