@@ -146,7 +146,7 @@ const ContactForm1 = () => {
                 </div>
               </div>
 
-              <div className="container mt-5">
+              {/* <div className="container mt-5">
                 <div className="row">
                   <div className="col-sm-6 ">
                     <div className="ms-1" style={{ color: "#cdcdcd" }}>
@@ -172,10 +172,10 @@ const ContactForm1 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* <div className="container mt-5">
-                <p style={{ color: "#7a9cd2" }}>
+              <div className="container mt-5">
+                {/* <p style={{ color: "#7a9cd2" }}>
                   You will talk to our leadership
                 </p>
                 <div className="row">
@@ -200,8 +200,8 @@ const ContactForm1 = () => {
                     </div>
                     <div>Chief Strategy Officer</div>
                   </div>
-                </div>
-              </div> */}
+                </div> */}
+              </div>
             </div>
           </div>
         </div>
