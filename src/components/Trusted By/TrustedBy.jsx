@@ -40,10 +40,10 @@ const TrustedBy = () => {
           <p className="fs-4 text-end" style={{ textDecoration: "underline" }}>Client Geography</p>
           <img src={image2} alt="arrow" className="img-fluid arrow-img ms-5 ps-5" />
           <div className="circle blue mx-auto">
+            <div className="circle-text">Canada</div>
+            <div className="circle-text">US</div>
             <div className="circle-text">Germany</div>
             <div className="circle-text">Switzerland</div>
-            <div className="circle-text">US</div>
-            <div className="circle-text">Israel</div>
           </div>
         </div>
       </div>
