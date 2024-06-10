@@ -67,7 +67,15 @@ const Brings = () => {
                     <div className="container">
                       <div className="row">
                         <div className="col-sm-6 py-4 ps-4">
-                          <p className="fs-3 fw-medium">
+                          <p
+                            className="fs-3 fw-medium"
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.color = "#ff6634";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.color = "#212529";
+                            }}
+                          >
                             Search for a truly reliable partner who works
                             inclusively
                           </p>
@@ -108,7 +116,15 @@ const Brings = () => {
                           />
                         </div>
                         <div className="col-sm-8 py-4 ps-4">
-                          <p className="fs-3 fw-medium">
+                          <p
+                            className="fs-3 fw-medium"
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.color = "#ff6634";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.color = "#212529";
+                            }}
+                          >
                             Need for fairly rare expertise in software
                             reengineering and digitalization
                           </p>
@@ -135,7 +151,15 @@ const Brings = () => {
                     <div className="container">
                       <div className="row">
                         <div className="col-sm-8 py-4 ps-4">
-                          <p className="fs-3 fw-medium">
+                          <p
+                            className="fs-3 fw-medium"
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.color = "#ff6634";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.color = "#212529";
+                            }}
+                          >
                             Shortfall in revenue due to inefficient processes
                             and technical solutions
                           </p>
