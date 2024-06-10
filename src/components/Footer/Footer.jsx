@@ -39,7 +39,10 @@ const Footer = () => {
   ];
 
   return (
-    <div className="container-fluid mt-5 pt-5 pb-5" style={{ backgroundColor: "#fafafa" }}>
+    <div
+      className="container-fluid mt-5 pt-5 pb-5"
+      style={{ backgroundColor: "#fafafa" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-sm-3">
@@ -52,50 +55,92 @@ const Footer = () => {
               +48 8847129686
             </div>
 
-            <p className="fs-5 fw-medium pt-5" style={{ color: "#557ab6" }}>LOCATION</p>
+            <p className="fs-5 fw-medium pt-5" style={{ color: "#557ab6" }}>
+              LOCATION
+            </p>
             <div>Head office: 3,9817 - 44 Avenue NW</div>
             <div>EDMONTON ALBERTA T6E 5E3</div>
-            <div className="mt-3">LICENCE NUMBER : <span className="fw-semibold">498666132-001</span></div>
+            <div className="mt-3">
+              LICENCE NUMBER :{" "}
+              <span className="fw-semibold">498666132-001</span>
+            </div>
           </div>
           <div className="col-sm-3">
-            <div className="fs-5 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
-              SERVICES
+            <div className="fs-5 mt-3">
+              <a
+                href="/services"
+                style={{ color: "#557ab6", textDecoration: "none" }}
+              >
+                SERVICES
+              </a>
             </div>
-            <div className="fs-5 mt-3 mb-3 " style={{ textDecoration: "underline" }}>
+            <div
+              className="fs-5 mt-3 mb-3 "
+              style={{ textDecoration: "underline" }}
+            >
               Core Software Services
             </div>
             {services.map((service, index) => (
-              <div key={index} className="hover-effect">{service}</div>
+              <div key={index} className="hover-effect">
+                {service}
+              </div>
             ))}
-            <div className="fs-5 mt-3 mb-3 " style={{ textDecoration: "underline" }}>
+            <div
+              className="fs-5 mt-3 mb-3 "
+              style={{ textDecoration: "underline" }}
+            >
               Core areas of expertise
             </div>
             {expertise.map((area, index) => (
-              <div key={index} className="hover-effect">{area}</div>
+              <div key={index} className="hover-effect">
+                {area}
+              </div>
             ))}
           </div>
           <div className="col-sm-2">
-            <div className="fs-5 mb-3 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
+            <div className="fs-5 mb-3 mt-3 " style={{ color: "#557ab6" }}>
               CASE STUDIES
             </div>
             {caseStudies.map((caseStudy, index) => (
-              <div key={index} className="hover-effect">{caseStudy}</div>
+              <div key={index} className="hover-effect">
+                {caseStudy}
+              </div>
             ))}
             <div className="mt-3">
-              <a href="#" className="hover-effect" style={{ textDecoration: "none" }}>
+              <a
+                href="#"
+                className="hover-effect"
+                style={{ textDecoration: "none" }}
+              >
                 View All
               </a>
             </div>
           </div>
           <div className="col-sm-2">
-            <div className="fs-5 mb-3 mt-3 hover-effect1" style={{ color: "#557ab6" }}>
+            <div className="fs-5 mb-3 mt-3" style={{ color: "#557ab6" }}>
               COMPANY
             </div>
-            <div className="hover-effect">About us</div>
-            <div className="hover-effect">Careers</div>
+            <div>
+              <a
+                href="/about"
+                style={{ textDecoration: "none" }}
+                className="hover-effect"
+              >
+                About us
+              </a>
+            </div>
+            {/* <div className="hover-effect">Careers</div>
             <div className="hover-effect">Blog</div>
-            <div className="hover-effect">News</div>
-            <div className="hover-effect">Contact us</div>
+            <div className="hover-effect">News</div> */}
+            <div>
+              <a
+                href="/contact"
+                style={{ textDecoration: "none" }}
+                className="hover-effect"
+              >
+                Contact us
+              </a>
+            </div>
           </div>
           <div className="col-sm-2">
             <div className="fs-5 mb-3 mt-3" style={{ color: "#c4c4c4" }}>
@@ -111,7 +156,15 @@ const Footer = () => {
         <hr />
         <div className="d-flex justify-content-between">
           <div>© Copyright {currentYear} Kaatoo</div>
-          <div>Privacy policy</div>
+          <div>
+            {" "}
+            <a
+              href="/privacypolicy"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Privacy policy
+            </a>
+          </div>
         </div>
       </div>
     </div>
