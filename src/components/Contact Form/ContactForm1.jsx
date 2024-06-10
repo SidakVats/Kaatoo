@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import image from "../../images/login1.svg";
 import image1 from "../../images/login2.svg";
 
-import image2 from "../../images/linkedin.svg";
-import image3 from "../../images/login4.png";
-import image4 from "../../images/login5.png";
+import image5 from "../../images/contact1.jpg";
+
+// import image2 from "../../images/linkedin.svg";
+// import image3 from "../../images/login4.png";
+// import image4 from "../../images/login5.png";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -144,6 +146,10 @@ const ContactForm1 = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="container mt-5">
+              <img src={image5} alt="image5" className="img-fluid"  id="contactus"/>
               </div>
 
               {/* <div className="container mt-5">

@@ -42,4 +42,13 @@
   transition: all;
 }
 
+@media screen and (max-width: 480px) {
+  #contactus{
+    visibility: hidden;
+    margin-top: 0;
+  }
+}
+
+
+
 
