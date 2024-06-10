@@ -4,7 +4,7 @@
   display: none;
   position: absolute;
   left: 50%;
-  transform: translateX(-30%);
+  transform: translateX(-45%);
   /* transform: translateY(3.5%); */
   width: 900px; /* Set a fixed width */
   padding: 1rem;
@@ -81,6 +81,12 @@
   transition: color 0.3s ease; 
 }
 
+
+
+
+.button1:active{
+  outline: none;
+}
 
 
 

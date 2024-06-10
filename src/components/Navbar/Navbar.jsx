@@ -52,9 +52,9 @@ const Navbar = () => {
         style={{ height: "100px" }}
       >
         <div className="container d-flex justify-content-between">
-          <a className="navbar-brand" href="/">
+          {/* <a className="navbar-brand" href="/"> */}
             <img src={image} alt="logo" className="img-fluid" />
-          </a>
+          {/* </a> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -85,6 +85,11 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-evenly fs-4 text-uppercase flex-grow-1 pe-3">
+              <li className="nav-item fw-semibold">
+                  <a className="nav-link hover1" href="/">
+                    Home
+                  </a>
+                </li>
                 <li 
                   className="nav-item dropdown"
                   onMouseEnter={handleMouseEnter}
@@ -163,18 +168,15 @@ const Navbar = () => {
                     About Us
                   </a>
                 </li>
-                <li className="nav-item fw-semibold">
-                  <a className="nav-link hover1" href="/contact">
-                    Contact
-                  </a>
-                </li>
+                
               </ul>
+              <a href="/contact">
               <button
                 className="btn rounded-4 text-white fs-5 fw-semibold text-capitalize px-5 py-2 button1"
                 style={{ backgroundColor: "#f0734a" }}
               >
                 Contact Us
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
