@@ -1,9 +1,9 @@
 import React from "react";
 
 // Images 
-import image1 from "../../images/chooseus1.png";
-import image2 from "../../images/chooseus2.png";
-import image3 from "../../images/chooseus3.png";
+import image1 from "../../images/chooseus1.jpg";
+import image2 from "../../images/chooseus2.jpg";
+import image3 from "../../images/chooseus3.jpg";
 
 const sections = [
   {
@@ -31,15 +31,17 @@ const ChooseUs = () => {
           <div className="display-4 fw-medium mt-5 mb-3">Clients select us for</div>
           {sections.map((section, index) => (
             <div className="col-sm-4 mt-4" key={index}>
-              <div className="mt-3 text-capatalized fs-2 fw-semibold mb-2">{section.title}</div>
+              <div className="mt-3 text-capatalized fs-2 fw-semibold mb-2 ">{section.title}</div>
               {index === 1 ? (
                 <>
                   <div className="fs-5">{section.description}</div>
-                  <img src={section.image} alt={`image${index}`} className="img-fluid mt-3" />
+                  <div className="">
+                  <img src={section.image} alt={`image${index}`} className="img-fluid mt-3 rounded-4" />
+                  </div>
                 </>
               ) : (
                 <>
-                  <img src={section.image} alt={`image${index}`} className="img-fluid" />
+                  <img src={section.image} alt={`image${index}`} className="img-fluid rounded-4" />
                   <div className="fs-5 mt-3">{section.description}</div>
                 </>
               )}

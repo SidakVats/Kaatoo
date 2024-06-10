@@ -3,7 +3,7 @@ import React from "react";
 
 // Images 
 import image from "../../images/working.png";
-import image1 from "../../images/working2.png";
+import image1 from "../../images/working2.jpg";
 
 const Working = () => {
   return (
@@ -39,10 +39,10 @@ const Working = () => {
 
       <div className="container mt-2">
         <div className="row mt-5">
-          <div className="col-sm-4 mb-2">
-            <img src={image1} alt="" className="img-fluid" />
+          <div className="col-sm-6 ">
+            <img src={image1} alt="" className="img-fluid mt-2 rounded-4" />
           </div>
-          <div className="col-sm-8">
+          <div className="col-sm-6">
             <div
               className="px-5 py-2 rounded-4"
               style={{ border: "2px solid #ededed", fontSize: "18px" }}

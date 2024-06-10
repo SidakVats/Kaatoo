@@ -4,7 +4,7 @@ import image1 from "../../images/work1.svg";
 import image2 from "../../images/work2.svg";
 import image3 from "../../images/work3.svg";
 import image4 from "../../images/work4.svg";
-import image5 from "../../images/work1.png";
+import image5 from "../../images/work1.jpg";
 
 const Work = () => {
   return (
@@ -49,7 +49,7 @@ const Work = () => {
               </div> */}
             </div>
             <div className="col-sm-5">
-                <img src={image5} alt="" className="img-fluid" />
+                <img src={image5} alt="" className="img-fluid rounded-4" />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 // Images 
-import image from "../../images/hero1.png";
+import image from "../../images/hero1.jpg";
 import image2 from "../../images/hero2.svg";
 import image3 from "../../images/hero3.png";
 import image4 from "../../images/hero-brand.svg";

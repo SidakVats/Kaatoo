@@ -3,8 +3,8 @@ import React from "react";
 import "../../components/What brings client to us/Brings.css";
 
 import image from "../../images/bring1.png";
-import image1 from "../../images/bring2.png";
-import image2 from "../../images/bring3.png";
+import image1 from "../../images/bring2.jpg";
+import image2 from "../../images/bring3.jpg";
 
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -100,14 +100,14 @@ const Brings = () => {
                   >
                     <div className="container">
                       <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                           <img
                             src={image1}
                             alt="image2"
                             className="img-fluid rounded-4 shadow-sm"
                           />
                         </div>
-                        <div className="col-sm-6 py-4 ps-4">
+                        <div className="col-sm-8 py-4 ps-4">
                           <p className="fs-3 fw-medium">
                             Need for fairly rare expertise in software
                             reengineering and digitalization
@@ -134,7 +134,7 @@ const Brings = () => {
                   >
                     <div className="container">
                       <div className="row">
-                        <div className="col-sm-6 py-4 ps-4">
+                        <div className="col-sm-8 py-4 ps-4">
                           <p className="fs-3 fw-medium">
                             Shortfall in revenue due to inefficient processes
                             and technical solutions
@@ -145,7 +145,7 @@ const Brings = () => {
                             engineering resources towards productivity.
                           </p>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                           <img
                             src={image2}
                             alt="image3"
