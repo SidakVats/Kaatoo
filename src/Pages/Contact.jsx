@@ -11,6 +11,8 @@ import HomeIcon from "@mui/icons-material/Home";
 
 import RecentActorsIcon from '@mui/icons-material/RecentActors';
 
+import Contact1 from "../components/Contact Banner/Contact";
+
 const Contact = () => {
   return (
     <>
@@ -134,6 +136,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <Contact1/>
     </>
   );
 };
