@@ -148,10 +148,10 @@ const ContactForm1 = () => {
                 </div>
               </div>
 
-              <div className="container mt-5">
-              <img src={image5} alt="image5" className="img-fluid"  id="contactus"/>
+             
+              <div className="container mt-5" id="contactus">
+              <img src={image5} alt="image5" className="img-fluid"  />
               </div>
-
               {/* <div className="container mt-5">
                 <div className="row">
                   <div className="col-sm-6 ">
@@ -180,7 +180,7 @@ const ContactForm1 = () => {
                 </div>
               </div> */}
 
-              <div className="container mt-5">
+              {/* <div className="container mt-5"> */}
                 {/* <p style={{ color: "#7a9cd2" }}>
                   You will talk to our leadership
                 </p>
@@ -207,7 +207,7 @@ const ContactForm1 = () => {
                     <div>Chief Strategy Officer</div>
                   </div>
                 </div> */}
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
